@@ -1,0 +1,62 @@
+h1 {
+    text-align: center;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    width: 300px;
+    height: 300px;
+    gap: 7px;
+    margin: 0 auto;
+
+
+}
+
+.sqaure {
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+
+}
+
+.square:hover {
+    cursor: pointer;
+
+}
+
+#restart-button {
+    display: block;
+    margin: 100px auto;
+    margin-top: 20px;
+    font-size: 20px;
+    padding: 5px 10px;
+    background-color: #ccc;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#restart-button:hover {
+    background-color: #aaa;
+}
+
+#retart-button:active {
+    background-color: #999;
+}
+
+#winner-message {
+    margin-top: 75px;
+    font-size: 24px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
