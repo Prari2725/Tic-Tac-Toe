@@ -3,31 +3,28 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tic tacToe using Javascript </title>
-    <link rel="stylesheet" type="text/css" href="TicTacToe.css">
+    <title>Tic Tac Toe JavaScript Game</title>
+    <link rel="stylesheet" href="TicTacToe.css">
 </head>
 
 <body>
-    <center>
-        <h1>Tic Tac Toe using Javascript</h1>
-        <div class="game">
-            <div class="board">
-                <div class="cell"></div>
-                <div class="cell"></div>
-                <div class="cell"></div>
-                <div class="cell"></div>
-                <div class="cell"></div>
-                <div class="cell"></div>
-                <div class="cell"></div>
-                <div class="cell"></div>
-                <div class="cell"></div>
-            </div>
-            <div id="Winner Message"></div>
+    <h1>Tic Tac Toe Game</h1>
+    <div id="game">
+        <div id="board">
+            <div class="square" data-index="0"></div>
+            <div class="square" data-index="1"></div>
+            <div class="square" data-index="2"></div>
+            <div class="square" data-index="3"></div>
+            <div class="square" data-index="4"></div>
+            <div class="square" data-index="5"></div>
+            <div class="square" data-index="6"></div>
+            <div class="square" data-index="7"></div>
+            <div class="square" data-index="8"></div>
         </div>
-        <button id="restart-button">Restart game</button>
-    </center>
+        <div id="winner-message"></div>
+    </div>
+    <button id="restart-button">Restart Game</button>
     <script src="TicTacToe.js"></script>
 </body>
 
